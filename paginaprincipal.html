@@ -106,6 +106,22 @@
     <footer>
         <p>Divino Pote© 2025</p>
     </footer>
-    <script src="./app.js"></script>
+    <script>
+        document.getElementById("meuFormulario").addEventListener("submit", async function(event) {
+            event.preventDefault(); // Evita recarregar a página
+    
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries()); // Converte para JSON
+    
+            const response = await fetch('/api/sendEmail', { // Chama a API
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+    
+            const result = await response.json();
+            alert(result.success || result.error); // Mostra o resultado
+        });
+    </script>
 </body>
 </html>
