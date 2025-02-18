@@ -347,7 +347,7 @@ footer {
 /*CSS para celular*/
 @media (max-width: 768px) {
     .imglogo {
-        width: 30%;
+        width: 50%;
         height: 20%;
         margin-bottom:2%;
     }
