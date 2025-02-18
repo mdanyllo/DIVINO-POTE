@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/favicondp.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
@@ -16,10 +16,11 @@
             <div class="logo">
                 <img class="imglogo" src="./assets/Divino.png" alt="">
                 <h1 class="p_logo">Faça já o seu pedido</h1>
-                <a class="a_logo" href="">Whatsapp</a>
+                <a class="a_logo" href="
+https://wa.me/5531984517470?text=Desejo%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20marmitas%20">Whatsapp</a>
             </div>
             <section class="nav_bar">
-                <a class="a_nav_bar" href="#cardapio">Cardápio</a>
+                <a id="card" class="a_nav_bar" href="#cardapio">Cardápio</a>
                 <a class="a_nav_bar" href="#conheca">Conheça-nos</a>
                 <a class="a_nav_bar" href="#sobre">Sobre</a>
                 <a class="a_nav_bar" href="#contato">Contato</a>
@@ -57,27 +58,43 @@
                 </div>
             </section>
             <h2 class="h2_cardapio">Peça agora mesmo</h2>
-            <a class="a_logo" href="">Whatsapp</a>
+            <a class="a_logo" href="
+https://wa.me/5531984517470?text=Desejo%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20marmitas%20">Whatsapp</a>
         </section>
         <section class="barra">
             ㅤㅤ
         </section>
         <section id="conheca" class="conheca">
-            <img src="./assets/Divino.png" alt="">
-            <img src="./assets/Divino.png" alt="">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="./assets/marmita3.jpg" class="active" alt="Imagem 1">
+                    <img src="./assets/marmita2.jpg" alt="Imagem 2">
+                    <img src="./assets/marmita1.jpg" alt="Imagem 3">
+                </div>
+                <div class="buttons">
+                    <button onclick="prevSlide()">&#10094;</button>
+                    <button onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
         </section>
         <section id="sobre" class="sobre">
             <h1 class="h1_sobre">Sobre nós</h1>
             <section class="sobre2">
-                <p class="p_sobre">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Convallis dis diam lacinia felis lacinia fermentum ex porttitor. Dictum vel montes suspendisse tristique porttitor varius. Consequat arcu ipsum montes magna at. Cubilia consectetur tempus facilisis sit per, orci maecenas. Et ex accumsan aptent primis augue pharetra habitant.
+                <p class="p_sobre"><strong>Nossa história</strong><br>
+Em meio à correria do dia a dia, equilibrando carreiras exigentes e os cuidados com o lar, percebemos como era desafiador manter uma alimentação saudável e saborosa. Muitas vezes, a falta de tempo nos levava a opções rápidas e pouco nutritivas. Foi então que decidimos transformar esse desafio em uma oportunidade: criar uma solução prática que beneficiasse não apenas a nós, mas também outras famílias enfrentando a mesma situação.
 
-                    Dictumst suspendisse tempor proin nullam aptent cubilia lacus. Amet quis justo pharetra volutpat enim lacus nec curae. Ridiculus laoreet condimentum pulvinar porttitor nulla diam? Aenean malesuada rutrum himenaeos rhoncus placerat, ultricies augue porta. Pharetra class finibus leo fames, parturient eleifend tristique. Vivamus semper suspendisse fusce himenaeos velit.
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Convallis dis diam lacinia felis lacinia fermentum ex porttitor. Dictum vel montes suspendisse tristique porttitor varius. Consequat arcu ipsum montes magna at. Cubilia consectetur tempus facilisis sit per, orci maecenas. Et ex accumsan aptent primis augue pharetra habitant.
+Assim nasceu nossa marmitaria congelada, com o propósito de oferecer refeições que aliam saúde, sabor e conveniência. Priorizamos ingredientes naturais, evitando quase totalmente produtos industrializados. Nossas receitas são temperadas com ervas frescas e sal de qualidade, remetendo ao inconfundível sabor da comida caseira, como a da casa da vovó.
+Ágaph Project DJ - DJ gospel, a serviço do Reino
+Nosso público-alvo são profissionais ocupados, estudantes e famílias que buscam praticidade sem abrir mão de uma alimentação equilibrada. Entendemos suas rotinas agitadas e nos dedicamos a proporcionar refeições que tragam sustância, satisfação e bem-estar.
 
-                    Dictumst suspendisse tempor proin nullam aptent cubilia lacus. Amet quis justo pharetra volutpat enim lacus nec curae. Ridiculus laoreet condimentum pulvinar porttitor nulla diam? Aenean malesuada rutrum himenaeos rhoncus placerat, ultricies augue porta. Pharetra class finibus leo fames, parturient eleifend tristique. Vivamus semper suspendisse fusce himenaeos velit.
-                </p>
-                <img class="img_sobre" src="./assets/Divino.png" alt="">
+Valorizamos a comunidade local, escolhendo ingredientes de produtores familiares e mercados próximos ao nosso bairro. Isso não apenas garante a frescor dos nossos pratos, mas também fortalece a economia local.
+
+Olhando para o futuro, planejamos expandir nosso cardápio com receitas exclusivas, incluindo opções veganas e vegetarianas. Além disso, aspiramos realizar eventos gastronômicos e contribuir para a sociedade através da distribuição de alimentos a pessoas em situação de vulnerabilidade.
+
+Convidamos você a experimentar nossas refeições e sentir o carinho e dedicação que colocamos em cada prato, facilitando seu dia a dia com saúde e sabor.
+</p>
+                
+            <img class="img_sobre" src="./assets/Divino.png" alt="">
             </section>
         </section>
         <section class="barra">
@@ -87,9 +104,9 @@
         <section id="contato" class="contato">
             <div class="div1">
                 <h1 class="h1_div1">Entre em contato conosco</h1>
-                <p class="p_div1">Email: divino@gmail.com</p>
-                <p class="p_div1">Contato: (xx) xxxxx-xxxx</p>
-                <p>Endereço: Rua da paz, N 91, Bairro da paz.</p>
+                <p class="p_div1"><strong>Contato:</strong> (31) 98451-7470</strong></p>
+                <p class="p_div1"><strong>Email:</strong> divino@gmail.com</p>
+                <p><strong>Endereço:</strong> Av Suburbana, N 69, Bairro Bota Fogo, 2 Seção - Justinópolis - Ribeirão das Neves.</p>
 
             </div>
             <div class="div2">
@@ -104,24 +121,8 @@
         </section>
     </header>
     <footer>
-        <p>Divino Pote© 2025</p>
+        <p>© 2025 Divino Pote. Todos os direitos reservados.</p>
     </footer>
-    <script>
-        document.getElementById("meuFormulario").addEventListener("submit", async function(event) {
-            event.preventDefault(); // Evita que a página recarregue ao enviar o formulário
-        
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData.entries()); // Converte os dados para um objeto
-        
-            const response = await fetch('https://apidp-production.up.railway.app/sendEmail', { 
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data) // Agora enviamos os dados corretos
-            });
-        
-            const result = await response.json();
-            alert(result.success || result.error); // Exibe mensagem de sucesso ou erro
-        });        
-    </script>
+    <script src="./app.js"></script>
 </body>
 </html>
